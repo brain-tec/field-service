@@ -25,7 +25,7 @@ msgid "# of Owned Locations"
 msgstr "# di location possedute"
 
 #. module: fieldservice
-#: code:addons/fieldservice/models/fsm_order.py:410
+#: code:addons/fieldservice/models/fsm_order.py:408
 #, python-format
 msgid "%s is a holiday (%s)."
 msgstr "%s è una vacanza (%s)."
@@ -3186,7 +3186,7 @@ msgid "You cannot create recursive location."
 msgstr "Impossibile creare una ubicazione ricorsiva."
 
 #. module: fieldservice
-#: code:addons/fieldservice/models/fsm_order.py:267
+#: code:addons/fieldservice/models/fsm_order.py:266
 #, python-format
 msgid "You cannot delete this order."
 msgstr "Impossibile eliminare questo ordine."
