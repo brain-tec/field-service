@@ -13,9 +13,12 @@ setuptools.setup(
         'odoo14-addon-fieldservice_account',
         'odoo14-addon-fieldservice_account_analytic',
         'odoo14-addon-fieldservice_crm',
+        'odoo14-addon-fieldservice_distribution',
+        'odoo14-addon-fieldservice_isp_flow',
         'odoo14-addon-fieldservice_project',
         'odoo14-addon-fieldservice_route',
         'odoo14-addon-fieldservice_skill',
+        'odoo14-addon-fieldservice_stock',
         'odoo14-addon-fieldservice_timeline',
     ],
     classifiers=[

@@ -24,9 +24,12 @@ addon | version | summary
 [fieldservice_account](fieldservice_account/) | 14.0.1.0.0 | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 14.0.1.0.0 | Track analytic accounts on Field Service locations and orders
 [fieldservice_crm](fieldservice_crm/) | 14.0.1.0.0 | Create Field Service orders from the CRM
+[fieldservice_distribution](fieldservice_distribution/) | 14.0.1.0.0 | Manage your distribution structure
+[fieldservice_isp_flow](fieldservice_isp_flow/) | 14.0.1.0.0 | Field Service workflow for Internet Service Providers
 [fieldservice_project](fieldservice_project/) | 14.0.1.0.0 | Create field service orders from a project or project task
 [fieldservice_route](fieldservice_route/) | 14.0.1.0.0 | Organize the routes of each day.
 [fieldservice_skill](fieldservice_skill/) | 14.0.1.0.0 | Manage your Field Service workers skills
+[fieldservice_stock](fieldservice_stock/) | 14.0.1.0.0 | Integrate the logistics operations with Field Service
 [fieldservice_timeline](fieldservice_timeline/) | 14.0.1.1.1 | This module is a display timeline view of the Field Service order in Odoo.
 
 [//]: # (end addons)
