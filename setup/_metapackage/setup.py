@@ -12,6 +12,7 @@ setuptools.setup(
         'odoo14-addon-fieldservice',
         'odoo14-addon-fieldservice_account',
         'odoo14-addon-fieldservice_account_analytic',
+        'odoo14-addon-fieldservice_account_payment',
         'odoo14-addon-fieldservice_activity',
         'odoo14-addon-fieldservice_agreement',
         'odoo14-addon-fieldservice_calendar',
@@ -28,6 +29,7 @@ setuptools.setup(
         'odoo14-addon-fieldservice_skill',
         'odoo14-addon-fieldservice_stage_server_action',
         'odoo14-addon-fieldservice_stock',
+        'odoo14-addon-fieldservice_substatus',
         'odoo14-addon-fieldservice_timeline',
     ],
     classifiers=[

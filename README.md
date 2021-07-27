@@ -20,9 +20,10 @@ Available addons
 addon | version | summary
 --- | --- | ---
 [base_territory](base_territory/) | 14.0.1.0.0 | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 14.0.1.2.0 | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 14.0.1.3.0 | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 14.0.1.0.0 | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 14.0.1.0.0 | Track analytic accounts on Field Service locations and orders
+[fieldservice_account_payment](fieldservice_account_payment/) | 14.0.1.0.0 | Allow workers to collect payments from the order.
 [fieldservice_activity](fieldservice_activity/) | 14.0.1.0.0 | Field Service Activities are a set of actions that need to be performed on a service order
 [fieldservice_agreement](fieldservice_agreement/) | 14.0.1.0.0 | Manage Field Service agreements and contracts
 [fieldservice_calendar](fieldservice_calendar/) | 14.0.1.0.0 | Add calendar to FSM Orders
@@ -39,6 +40,7 @@ addon | version | summary
 [fieldservice_skill](fieldservice_skill/) | 14.0.1.0.0 | Manage your Field Service workers skills
 [fieldservice_stage_server_action](fieldservice_stage_server_action/) | 14.0.1.0.0 | Execute server actions when reaching a Field Service stage
 [fieldservice_stock](fieldservice_stock/) | 14.0.1.0.0 | Integrate the logistics operations with Field Service
+[fieldservice_substatus](fieldservice_substatus/) | 14.0.1.0.0 | Add sub-statuses to Field Service orders
 [fieldservice_timeline](fieldservice_timeline/) | 14.0.1.1.1 | This module is a display timeline view of the Field Service order in Odoo.
 
 [//]: # (end addons)
