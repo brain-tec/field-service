@@ -25,7 +25,7 @@ msgid "# of Owned Locations"
 msgstr "# Service-Orte"
 
 #. module: fieldservice
-#: code:addons/fieldservice/models/fsm_order.py:408
+#: code:addons/fieldservice/models/fsm_order.py:405
 #, python-format
 msgid "%s is a holiday (%s)."
 msgstr ""
@@ -362,7 +362,7 @@ msgstr ""
 "mit demselben Typ und derselben Sequenz existiert."
 
 #. module: fieldservice
-#: code:addons/fieldservice/models/fsm_order.py:252
+#: code:addons/fieldservice/models/fsm_order.py:249
 #, python-format
 msgid "Cannot move to completed from Kanban"
 msgstr ""
@@ -3125,7 +3125,7 @@ msgid "You cannot create recursive location."
 msgstr ""
 
 #. module: fieldservice
-#: code:addons/fieldservice/models/fsm_order.py:266
+#: code:addons/fieldservice/models/fsm_order.py:263
 #, python-format
 msgid "You cannot delete this order."
 msgstr ""
