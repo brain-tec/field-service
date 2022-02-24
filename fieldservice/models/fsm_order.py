@@ -19,7 +19,7 @@ class FSMOrder(models.Model):
             [
                 ("stage_type", "=", "order"),
                 ("is_default", "=", True),
-                ("company_id", "in", (self.env.user.company_id.id, False)),
+                ("company_id", "in", (self.env.company.id, False)),
             ],
             order="sequence asc",
             limit=1,
@@ -31,7 +31,7 @@ class FSMOrder(models.Model):
 
     def _default_team_id(self):
         team_ids = self.env["fsm.team"].search(
-            [("company_id", "in", (self.env.user.company_id.id, False))],
+            [("company_id", "in", (self.env.company.id, False))],
             order="sequence asc",
             limit=1,
         )
@@ -112,7 +112,8 @@ class FSMOrder(models.Model):
     )
     location_directions = fields.Char(string="Location Directions")
     request_early = fields.Datetime(
-        string="Earliest Request Date", default=fields.Datetime.now
+        string="Earliest Request Date",
+        default=lambda _: fields.Datetime.now().replace(second=0),
     )
     color = fields.Integer("Color Index")
     company_id = fields.Many2one(
@@ -120,7 +121,7 @@ class FSMOrder(models.Model):
         string="Company",
         required=True,
         index=True,
-        default=lambda self: self.env.user.company_id,
+        default=lambda self: self.env.company,
         help="Company related to this order",
     )
 
@@ -236,19 +237,6 @@ class FSMOrder(models.Model):
     def create(self, vals):
         if vals.get("name", _("New")) == _("New"):
             vals["name"] = self.env["ir.sequence"].next_by_code("fsm.order") or _("New")
-        if vals.get("request_early", False) and not vals.get("scheduled_date_start"):
-            req_date = fields.Datetime.from_string(vals["request_early"])
-            # Round scheduled date start
-            req_date = req_date.replace(minute=0, second=0, microsecond=0)
-            vals.update(
-                {"scheduled_date_start": str(req_date), "request_early": str(req_date)}
-            )
-        vals.update(
-            {
-                "scheduled_date_end": self._context.get("default_scheduled_date_end")
-                or False
-            }
-        )
         self._calc_scheduled_dates(vals)
         if not vals.get("request_late"):
             vals = self._compute_request_late(vals)
