@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-07-14 18:19+0000\n"
-"Last-Translator: brian10048 <brian@mcmpest.com>\n"
+"PO-Revision-Date: 2023-07-20 17:11+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: fieldservice_recurring
 #: code:addons/fieldservice_recurring/models/fsm_frequency.py:0
@@ -33,7 +33,7 @@ msgstr "<span class=\"o_stat_text\">Pedido Recurrente</span>"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_needaction
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_needaction
 msgid "Action Needed"
-msgstr "Acci??n Requerida"
+msgstr "Acción Necesaria"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__active
@@ -102,17 +102,6 @@ msgid "By Position"
 msgstr "Por Posici??n"
 
 #. module: fieldservice_recurring
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
-msgid "Cancel"
-msgstr "Cancelar"
-
-#. module: fieldservice_recurring
-#: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_recurring__state__cancel
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
-msgid "Cancelled"
-msgstr "Cancelada"
-
-#. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency__is_exclusive
 msgid ""
 "Checking this box will make this an exclusive rule. Exclusive\n"
@@ -133,12 +122,7 @@ msgstr "Cerrado"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__company_id
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__company_id
 msgid "Company"
-msgstr "Campa????a"
-
-#. module: fieldservice_recurring
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
-msgid "Confirm"
-msgstr "Confirmar"
+msgstr "Compañía"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__create_uid
@@ -200,6 +184,7 @@ msgstr "Descripci??n"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency_set__display_name
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__display_name
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__display_name
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_team__display_name
 msgid "Display Name"
 msgstr "Nombre Mostrado"
 
@@ -210,6 +195,11 @@ msgid "Draft"
 msgstr "Borrador"
 
 #. module: fieldservice_recurring
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.view_team_kanban_recurring
+msgid "Draft Recurring"
+msgstr ""
+
+#. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency_set__buffer_early
 msgid "Early Buffer"
 msgstr "Tolerancia Temprano"
@@ -218,6 +208,11 @@ msgstr "Tolerancia Temprano"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__end_date
 msgid "End Date"
 msgstr "Fecha Fin"
+
+#. module: fieldservice_recurring
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__equipment_ids
+msgid "Equipment"
+msgstr ""
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__is_exclusive
@@ -258,6 +253,11 @@ msgstr "??rdenes Recurrentes de Servicio de Campo"
 #: model:ir.actions.act_window,name:fieldservice_recurring.action_fsm_recurring_template
 msgid "Field Service Recurring Templates"
 msgstr "Plantillas Recurrentes de Servicio de Campo"
+
+#. module: fieldservice_recurring
+#: model:ir.model,name:fieldservice_recurring.model_fsm_team
+msgid "Field Service Team"
+msgstr ""
 
 #. module: fieldservice_recurring
 #: model:ir.actions.server,name:fieldservice_recurring.recurring_orders_cron_ir_actions_server
@@ -361,6 +361,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_order__id
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__id
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__id
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_team__id
 msgid "ID"
 msgstr "ID"
 
@@ -438,6 +439,7 @@ msgstr "Junio"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_order____last_update
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring____last_update
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template____last_update
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_team____last_update
 msgid "Last Modified on"
 msgstr "??ltima Modificaci??n en"
 
@@ -447,7 +449,7 @@ msgstr "??ltima Modificaci??n en"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__write_uid
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__write_uid
 msgid "Last Updated by"
-msgstr "??ltima Actualizaci??n por"
+msgstr "actualizado por última vez por"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__write_date
@@ -455,7 +457,7 @@ msgstr "??ltima Actualizaci??n por"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__write_date
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__write_date
 msgid "Last Updated on"
-msgstr "??ltima Actualizaci??n en"
+msgstr "actualizado por última vez el"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency_set__buffer_late
@@ -551,7 +553,7 @@ msgstr "Nuevo"
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Fecha L??mite de Actividad Siguiente"
+msgstr "Fecha límite de la siguiente actividad"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__activity_summary
@@ -660,9 +662,11 @@ msgid "Recurring Order"
 msgstr "Orden Recurrente"
 
 #. module: fieldservice_recurring
+#: model:ir.actions.act_window,name:fieldservice_recurring.action_recurring_tree
 #: model:ir.ui.menu,name:fieldservice_recurring.menu_fsm_recurring
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_tree_view
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.view_team_kanban_recurring
 msgid "Recurring Orders"
 msgstr "??rdenes Recurrentes"
 
@@ -680,14 +684,14 @@ msgid "Recurring Templates"
 msgstr "Plantillas Recurrentes"
 
 #. module: fieldservice_recurring
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_team__recurring_draft_count
+msgid "Recurring in draft"
+msgstr ""
+
+#. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__end_date
 msgid "Recurring orders will not be made after this date"
 msgstr "Los Pedidos Recurrentes no se realizar??n despu??s de esta fecha"
-
-#. module: fieldservice_recurring
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
-msgid "Renew"
-msgstr "Renovar"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__interval
@@ -744,6 +748,11 @@ msgstr ""
 "laborable de cada mes."
 
 #. module: fieldservice_recurring
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
+msgid "Start"
+msgstr ""
+
+#. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__start_date
 msgid "Start Date"
 msgstr "Fecha de Inicio"
@@ -773,7 +782,19 @@ msgid "Sunday"
 msgstr "Domingo"
 
 #. module: fieldservice_recurring
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
+msgid "Suspend"
+msgstr ""
+
+#. module: fieldservice_recurring
+#: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_recurring__state__suspend
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
+msgid "Suspended"
+msgstr ""
+
+#. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__team_id
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
 msgid "Team"
 msgstr "Equipo"
 
@@ -829,12 +850,6 @@ msgstr "Esta es la plantilla de pedido que ser?? recurrente"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__th
 msgid "Thursday"
 msgstr "Jueves"
-
-#. module: fieldservice_recurring
-#: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_recurring__state__pending
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
-msgid "To Renew"
-msgstr "Para Renovar"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__tu
@@ -930,6 +945,21 @@ msgstr ""
 #: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_frequency__interval_type__yearly
 msgid "Yearly"
 msgstr "Anualmente"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+
+#~ msgid "Cancelled"
+#~ msgstr "Cancelada"
+
+#~ msgid "Confirm"
+#~ msgstr "Confirmar"
+
+#~ msgid "Renew"
+#~ msgstr "Renovar"
+
+#~ msgid "To Renew"
+#~ msgstr "Para Renovar"
 
 #~ msgid "If checked new messages require your attention."
 #~ msgstr "Si est?? marcado, los nuevos mensajes requieren su atenci??n."

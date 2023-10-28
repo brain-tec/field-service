@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-03-06 16:17+0000\n"
+"PO-Revision-Date: 2023-09-03 13:40+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: fieldservice_recurring
 #: code:addons/fieldservice_recurring/models/fsm_frequency.py:0
@@ -25,7 +25,7 @@ msgstr "'Il giorno del mese deve essere tra 1 e 31"
 #. module: fieldservice_recurring
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.view_fsm_order_form
 msgid "<span class=\"o_stat_text\">Recurring Order</span>"
-msgstr "<span class=\"o_stat_text\">Ordine ricorrente</span>"
+msgstr "<span class=\"o_stat_text\">Ordine periodico</span>"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__message_needaction
@@ -33,7 +33,7 @@ msgstr "<span class=\"o_stat_text\">Ordine ricorrente</span>"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_needaction
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_needaction
 msgid "Action Needed"
-msgstr "Richiesta azione"
+msgstr "Azione richiesta"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__active
@@ -65,12 +65,12 @@ msgstr "Icona tipo attività"
 #. module: fieldservice_recurring
 #: model_terms:ir.actions.act_window,help:fieldservice_recurring.action_fsm_recurring
 msgid "Add a Field Service Recurring Orders here."
-msgstr "Aggiungere qui un ordine ricorrente assistenza sul campo."
+msgstr "Aggiungere qui un ordine di assistenza sul campo periodico."
 
 #. module: fieldservice_recurring
 #: model_terms:ir.actions.act_window,help:fieldservice_recurring.action_fsm_recurring_template
 msgid "Add a Field Service Recurring Template here."
-msgstr "Aggiungere qui un modello ricorrente assistenza sul campo."
+msgstr "Aggiungere qui un modello di assistenza sul campo ricorrente."
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__apr
@@ -102,25 +102,14 @@ msgid "By Position"
 msgstr "Per posizione"
 
 #. module: fieldservice_recurring
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
-msgid "Cancel"
-msgstr "Annulla"
-
-#. module: fieldservice_recurring
-#: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_recurring__state__cancel
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
-msgid "Cancelled"
-msgstr "Annullato"
-
-#. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency__is_exclusive
 msgid ""
 "Checking this box will make this an exclusive rule. Exclusive\n"
 "            rules prevent the configured days from being a schedule option"
 msgstr ""
-"Selezionando questa opzione questa regola sarà esclusiva.. Le regole\n"
-"            esclusive evitano che i giorni selezionati sia disponibili alla "
-"schedulazione"
+"Selezionando questa opzione questa regola sarà esclusiva. Le regole\n"
+"            esclusive evitano che i giorni selezionati siano disponibili "
+"alla schedulazione"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_recurring__state__close
@@ -134,11 +123,6 @@ msgstr "Chiuso"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__company_id
 msgid "Company"
 msgstr "Azienda"
-
-#. module: fieldservice_recurring
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
-msgid "Confirm"
-msgstr "Conferma"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__create_uid
@@ -181,12 +165,12 @@ msgstr "Dicembre"
 msgid "Define a Frequency Rule Set for scheduling recurring orders here."
 msgstr ""
 "Definire qui un insieme di regole di frequenza per schedulare ordini "
-"ricorrenti."
+"periodici."
 
 #. module: fieldservice_recurring
 #: model_terms:ir.actions.act_window,help:fieldservice_recurring.action_fsm_frequency
 msgid "Define a Frequency for scheduling recurring orders here."
-msgstr "Definire qui una frequenza per schedulare gli ordini ricorrenti."
+msgstr "Definire qui una frequenza per schedulare gli ordini periodici."
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__description
@@ -200,6 +184,7 @@ msgstr "Descrizione"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency_set__display_name
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__display_name
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__display_name
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_team__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -208,6 +193,11 @@ msgstr "Nome visualizzato"
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
 msgid "Draft"
 msgstr "Bozza"
+
+#. module: fieldservice_recurring
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.view_team_kanban_recurring
+msgid "Draft Recurring"
+msgstr "Bozza periodica"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency_set__buffer_early
@@ -220,6 +210,11 @@ msgid "End Date"
 msgstr "Data fine"
 
 #. module: fieldservice_recurring
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__equipment_ids
+msgid "Equipment"
+msgstr "Attrezzatura"
+
+#. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__is_exclusive
 msgid "Exclusive Rule?"
 msgstr "Regola esclusiva?"
@@ -227,7 +222,7 @@ msgstr "Regola esclusiva?"
 #. module: fieldservice_recurring
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
 msgid "FSM Recurring Order Name"
-msgstr "Nome ordine FSM ricorrente"
+msgstr "Nome ordine FSM periodico"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__feb
@@ -252,19 +247,24 @@ msgstr "Ordine assistenza sul campo"
 #. module: fieldservice_recurring
 #: model:ir.actions.act_window,name:fieldservice_recurring.action_fsm_recurring
 msgid "Field Service Recurring Orders"
-msgstr "Ordini ricorrenti assistenza sul campo"
+msgstr "Ordini assistenza sul campo periodici"
 
 #. module: fieldservice_recurring
 #: model:ir.actions.act_window,name:fieldservice_recurring.action_fsm_recurring_template
 msgid "Field Service Recurring Templates"
-msgstr "Modelli assistenza sul campo ricorrente"
+msgstr "Modelli assistenza sul campo periodici"
+
+#. module: fieldservice_recurring
+#: model:ir.model,name:fieldservice_recurring.model_fsm_team
+msgid "Field Service Team"
+msgstr "Squadra assistenza sul campo"
 
 #. module: fieldservice_recurring
 #: model:ir.actions.server,name:fieldservice_recurring.recurring_orders_cron_ir_actions_server
 #: model:ir.cron,cron_name:fieldservice_recurring.recurring_orders_cron
 #: model:ir.cron,name:fieldservice_recurring.recurring_orders_cron
 msgid "Field Service: generate recurring orders"
-msgstr "Assistenza sul campo: genera ordini ricorrenti"
+msgstr "Assistenza sul campo: genera ordini periodici"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__message_follower_ids
@@ -272,7 +272,7 @@ msgstr "Assistenza sul campo: genera ordini ricorrenti"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_follower_ids
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_follower_ids
 msgid "Followers"
-msgstr "Follower"
+msgstr "Seguito da"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__message_channel_ids
@@ -280,7 +280,7 @@ msgstr "Follower"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_channel_ids
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_channel_ids
 msgid "Followers (Channels)"
-msgstr "Follower (Canali)"
+msgstr "Seguito da (canali)"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__message_partner_ids
@@ -288,12 +288,12 @@ msgstr "Follower (Canali)"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_partner_ids
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Follower (Partner)"
+msgstr "Seguito da (partner)"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr "Icona Font awesome es. fa-tasks"
+msgstr "Icona Font Awesome es. fa-tasks"
 
 #. module: fieldservice_recurring
 #: model:ir.ui.menu,name:fieldservice_recurring.menu_fsm_frequency
@@ -361,6 +361,7 @@ msgstr "Raggruppa per"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_order__id
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__id
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__id
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_team__id
 msgid "ID"
 msgstr "ID"
 
@@ -372,7 +373,7 @@ msgstr "Icona"
 #. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icona per indicare una eccezione attività."
+msgstr "Icona per indicare un'attività eccezione."
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency__message_needaction
@@ -384,7 +385,7 @@ msgstr "Icona per indicare una eccezione attività."
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring_template__message_needaction
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring_template__message_unread
 msgid "If checked, new messages require your attention."
-msgstr "Se impostato, il nuovo messaggio richiede la tua attenzione."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency__message_has_error
@@ -396,13 +397,13 @@ msgstr "Se impostato, il nuovo messaggio richiede la tua attenzione."
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring_template__message_has_error
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring_template__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Se impostato, alcuni messaggi hanno un errore di consegna."
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_recurring__state__progress
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
 msgid "In Progress"
-msgstr "In lavoro"
+msgstr "In corso"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__interval_type
@@ -415,7 +416,7 @@ msgstr "Tipo intervallo"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_is_follower
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_is_follower
 msgid "Is Follower"
-msgstr "È follower"
+msgstr "Segue"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__jan
@@ -438,6 +439,7 @@ msgstr "Giugno"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_order____last_update
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring____last_update
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template____last_update
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_team____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
 
@@ -455,7 +457,7 @@ msgstr "Ultimo aggiornamento di"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__write_date
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__write_date
 msgid "Last Updated on"
-msgstr "Ultimo aggiornamento di"
+msgstr "Ultimo aggiornamento il"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency_set__buffer_late
@@ -479,7 +481,7 @@ msgstr "Allegato principale"
 #. module: fieldservice_recurring
 #: model:res.groups,name:fieldservice_recurring.group_fsm_recurring
 msgid "Manage Recurring Orders"
-msgstr "Gestione ordini ricorrenti"
+msgstr "Gestione ordini periodici"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__mar
@@ -509,7 +511,7 @@ msgstr "Maggio"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_has_error
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__message_ids
@@ -517,7 +519,7 @@ msgstr "Errore consegna messaggio"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_ids
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_ids
 msgid "Messages"
-msgstr "Messaggio"
+msgstr "Messaggi"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__mo
@@ -532,7 +534,7 @@ msgstr "Mensile"
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "Mia scadenza attività"
+msgstr "Scadenza mia attività"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__name
@@ -551,17 +553,17 @@ msgstr "Nuovo"
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Scadenza attività successiva"
+msgstr "Scadenza prossima attività"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__activity_summary
 msgid "Next Activity Summary"
-msgstr "Riepilogo attività successiva"
+msgstr "Riepilogo prossima attività"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__activity_type_id
 msgid "Next Activity Type"
-msgstr "Tipo attività successiva"
+msgstr "Tipo prossima attività"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__nov
@@ -598,7 +600,7 @@ msgstr "Numero di messaggi che richiedono un'azione"
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__message_has_error_counter
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring_template__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Numero di messaggi con un errore di consegna"
+msgstr "Numero di messaggi con errore di consegna"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency__message_unread_counter
@@ -645,48 +647,50 @@ msgstr "La posizione deve essere tra -366 e 366"
 #. module: fieldservice_recurring
 #: model:ir.model,name:fieldservice_recurring.model_fsm_recurring
 msgid "Recurring Field Service Order"
-msgstr "Ordine ricorrente assistenza sul campo"
+msgstr "Ordine assistenza sul campo periodico"
 
 #. module: fieldservice_recurring
 #: model:ir.model,name:fieldservice_recurring.model_fsm_recurring_template
 msgid "Recurring Field Service Order Template"
-msgstr "Modello ordine ricorrente assistenza sul campo"
+msgstr "Modello ordine assistenza sul campo periodico"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_order__fsm_recurring_id
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
 msgid "Recurring Order"
-msgstr "Ordine ricorrente"
+msgstr "Ordine periodico"
 
 #. module: fieldservice_recurring
+#: model:ir.actions.act_window,name:fieldservice_recurring.action_recurring_tree
 #: model:ir.ui.menu,name:fieldservice_recurring.menu_fsm_recurring
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_tree_view
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.view_team_kanban_recurring
 msgid "Recurring Orders"
-msgstr "Ordini ricorrenti"
+msgstr "Ordini periodici"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__fsm_recurring_template_id
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_template_form_view
 msgid "Recurring Template"
-msgstr "Modello ricorrente"
+msgstr "Modello periodico"
 
 #. module: fieldservice_recurring
 #: model:ir.ui.menu,name:fieldservice_recurring.menu_fsm_recurring_templates
 #: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_template_tree_view
 msgid "Recurring Templates"
-msgstr "Modelli ricorrenti"
+msgstr "Modelli periodici"
+
+#. module: fieldservice_recurring
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_team__recurring_draft_count
+msgid "Recurring in draft"
+msgstr "Periodico in bozza"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__end_date
 msgid "Recurring orders will not be made after this date"
-msgstr "Gli ordini ricorrenti non verranno generati dopo questa data"
-
-#. module: fieldservice_recurring
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
-msgid "Renew"
-msgstr "Aggiorna"
+msgstr "Gli ordini periodici non verranno generati dopo questa data"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__interval
@@ -742,6 +746,11 @@ msgstr ""
 "            corrisponderà all'ultimo giorno lavorativo di ogni mese."
 
 #. module: fieldservice_recurring
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
+msgid "Start"
+msgstr "Avvia"
+
+#. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__start_date
 msgid "Start Date"
 msgstr "Data inizio"
@@ -760,10 +769,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stati in base alle attività\n"
-"Ritardo: la data richiesta è già passata\n"
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
 "Oggi: la data attività è oggi\n"
-"Pianificata: attività future."
+"Pianificato: attività future."
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__su
@@ -771,7 +780,19 @@ msgid "Sunday"
 msgstr "Domenica"
 
 #. module: fieldservice_recurring
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_form_view
+msgid "Suspend"
+msgstr "Sospendi"
+
+#. module: fieldservice_recurring
+#: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_recurring__state__suspend
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
+msgid "Suspended"
+msgstr "Sospeso"
+
+#. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__team_id
+#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
 msgid "Team"
 msgstr "Squadra"
 
@@ -821,18 +842,12 @@ msgstr "Numero di periodi tra eventi"
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__fsm_order_template_id
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring_template__fsm_order_template_id
 msgid "This is the order template that will be recurring"
-msgstr "Questo è il modello di ordine che sarà ricorrente"
+msgstr "Questo è il modello di ordine che sarà periodico"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__th
 msgid "Thursday"
 msgstr "Giovedì"
-
-#. module: fieldservice_recurring
-#: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_recurring__state__pending
-#: model_terms:ir.ui.view,arch_db:fieldservice_recurring.fsm_recurring_search_view
-msgid "To Renew"
-msgstr "Da rinnovare"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__tu
@@ -842,7 +857,7 @@ msgstr "Martedì"
 #. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Tipo di eccezione attività sul record."
+msgstr "Tipo di attività eccezione sul record."
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__message_unread
@@ -858,7 +873,7 @@ msgstr "Messaggi non letti"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_unread_counter
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr "Conteggio messaggio non letti"
+msgstr "Numero messaggi non letti"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__use_bymonthday
@@ -929,3 +944,18 @@ msgstr ""
 #: model:ir.model.fields.selection,name:fieldservice_recurring.selection__fsm_frequency__interval_type__yearly
 msgid "Yearly"
 msgstr "Annuale"
+
+#~ msgid "Cancel"
+#~ msgstr "Annulla"
+
+#~ msgid "Cancelled"
+#~ msgstr "Annullato"
+
+#~ msgid "Confirm"
+#~ msgstr "Conferma"
+
+#~ msgid "Renew"
+#~ msgstr "Aggiorna"
+
+#~ msgid "To Renew"
+#~ msgstr "Da rinnovare"

@@ -8,7 +8,9 @@ from odoo.exceptions import ValidationError
 class FSMOrder(models.Model):
     _inherit = "fsm.order"
 
-    order_activity_ids = fields.One2many("fsm.activity", "fsm_order_id", "Activites")
+    order_activity_ids = fields.One2many(
+        "fsm.activity", "fsm_order_id", "Order Activities"
+    )
 
     @api.onchange("template_id")
     def _onchange_template_id(self):
@@ -47,11 +49,10 @@ class FSMOrder(models.Model):
             if activity_id.required and activity_id.state == "todo":
                 raise ValidationError(
                     _(
-                        "You must complete activity '%s' before \
-                    completing this order."
+                        "You must complete activity '%s' before "
+                        "completing this order."
                     )
                     % activity_id.name
                 )
-        for activity_id in self.activity_ids:
-            activity_id.done = True
+        self.activity_ids.action_done()
         return res

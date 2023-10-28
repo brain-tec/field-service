@@ -210,7 +210,7 @@
     <record id="action_fsm_operation_order" model="ir.actions.act_window">
         <field name="name">Orders</field>
         <field name="res_model">fsm.order</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,calendar</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create an Order.
@@ -298,7 +298,7 @@
                                     </div>
                                     <div class="oe_kanban_bottom_right">
                                         <img
-                                            t-att-src="kanban_image('person', 'image_small', record.person_id.name)"
+                                            t-att-src="kanban_image('fsm.person', 'image_128', record.person_id.raw_value)"
                                             t-att-title="record.person_id.name"
                                             t-att-alt="record.person_id.name"
                                             width="24"
@@ -337,6 +337,7 @@
                 <field name="district_id" />
                 <field name="region_id" />
                 <field name="team_id" groups="fieldservice.group_fsm_team" />
+                <field name="person_id" />
                 <field name="person_ids" />
                 <separator />
                 <filter
@@ -346,12 +347,12 @@
                 />
                 <filter
                     string="Unassigned"
-                    domain="[('person_id', '=', False)]"
+                    domain="[('person_id', '=', False), ('stage_id.is_closed', '=', False)]"
                     name="unassigned"
                 />
                 <filter
                     string="Unscheduled"
-                    domain="[('scheduled_date_start', '=', False)]"
+                    domain="[('scheduled_date_start', '=', False), ('stage_id.is_closed', '=', False)]"
                     name="unscheduled"
                 />
                 <filter
@@ -415,6 +416,11 @@
                         domain=""
                         context="{'group_by':'region_id'}"
                     />
+                    <filter
+                        name="fsm_person_id"
+                        domain=""
+                        context="{'group_by':'person_id'}"
+                    />
                 </group>
             </search>
         </field>
@@ -431,15 +437,16 @@
                 color="stage_id"
             >
                 <field name="name" />
-                <field name="stage_id" />
+                <field name="stage_id" filters="1" />
                 <field name="location_id" />
                 <field name="phone" />
                 <field
                     name="person_id"
                     write_model="fsm.person.calendar.filter"
                     write_field="fsm_person_id"
-                    avatar_field="image_small"
+                    avatar_field="image_128"
                 />
+                <field name="team_id" filters="1" />
                 <field name="person_phone" />
                 <field name="city" />
                 <field name="state_name" />
@@ -456,6 +463,30 @@
                 Create an Order.
             </p>
         </field>
+    </record>
+    <record id="action_fsm_dash_order_view_kanban" model="ir.actions.act_window.view">
+        <field name="sequence" eval="0" />
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="fsm_order_kanban_view" />
+        <field name="act_window_id" ref="action_fsm_dash_order" />
+    </record>
+    <record id="action_fsm_dash_order_view_tree" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1" />
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="fsm_order_tree_view" />
+        <field name="act_window_id" ref="action_fsm_dash_order" />
+    </record>
+    <record id="action_fsm_dash_order_view_form" model="ir.actions.act_window.view">
+        <field name="sequence" eval="2" />
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="fsm_order_form" />
+        <field name="act_window_id" ref="action_fsm_dash_order" />
+    </record>
+    <record id="action_fsm_dash_order_view_calendar" model="ir.actions.act_window.view">
+        <field name="sequence" eval="3" />
+        <field name="view_mode">calendar</field>
+        <field name="view_id" ref="fsm_order_calendar_view" />
+        <field name="act_window_id" ref="action_fsm_dash_order" />
     </record>
     <!-- Reporting -->
     <record id="fsm_order_graph_view" model="ir.ui.view">
