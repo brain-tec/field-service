@@ -7,9 +7,18 @@
 
 <!-- /!\ do not modify above this line -->
 
-# field-service
+# Field Service Management
 
-TODO: add repo description.
+[Field Service Management](https://en.wikipedia.org/wiki/Field_service_management) (FSM) coordinates company resources employed at, or en route to, client sites, rather than on the company's premises. FSM most commonly refers to companies who need to manage installation, service or repairs of systems or equipment.
+
+Examples of field service use cases are:
+
+- In telecommunications and cable industry, technicians who install cable or run phone lines into residences or business establishments.
+- In healthcare, mobile nurses who provide in-home care for elderly or disabled.
+- In gas utilities, engineers who are dispatched to investigate and repair suspected leaks.
+- In heavy engineering, mining, industrial and manufacturing, technicians dispatched for preventative maintenance and repair.
+- In property maintenance, including landscaping, irrigation, and home and office cleaning.
+- In HVAC industry, technicians have the expertise and equipment to investigate units in residential, commercial and industrial environments.
 
 <!-- /!\ do not modify below this line -->
 
@@ -22,6 +31,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
+[fieldservice](fieldservice/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
 
 [//]: # (end addons)
 
