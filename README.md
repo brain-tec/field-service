@@ -22,11 +22,14 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 18.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 18.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
 [fieldservice_calendar](fieldservice_calendar/) | 18.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
 [fieldservice_crm](fieldservice_crm/) | 18.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
 [fieldservice_project](fieldservice_project/) | 18.0.1.0.0 |  | Create field service orders from a project or project task
+[fieldservice_recurring](fieldservice_recurring/) | 18.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
+[fieldservice_route](fieldservice_route/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
+[fieldservice_sale](fieldservice_sale/) | 18.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
 [fieldservice_vehicle](fieldservice_vehicle/) | 18.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service vehicles and assign drivers
 
 [//]: # (end addons)
