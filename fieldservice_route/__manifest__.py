@@ -5,7 +5,7 @@
 {
     "name": "Field Service Route",
     "summary": "Organize the routes of each day.",
-    "version": "18.0.1.0.2",
+    "version": "18.0.1.1.0",
     "category": "Field Service",
     "license": "AGPL-3",
     "author": "Open Source Integrators, Odoo Community Association (OCA)",
@@ -16,6 +16,7 @@
         "data/fsm_route_day_data.xml",
         "data/fsm_stage_data.xml",
         "security/ir.model.access.csv",
+        "security/ir.rule.xml",
         "views/fsm_route_day.xml",
         "views/fsm_route.xml",
         "views/fsm_location.xml",

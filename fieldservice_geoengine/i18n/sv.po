@@ -1,0 +1,166 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fieldservice_geoengine
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: sv\n"
+"PO-Revision-Date: 2026-11-24 15:46+0000\n"
+"X-Generator: Weblate 2026.11.2\n"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.fsm_location_form_view
+msgid "&amp;nbsp;Update Latitude and Longitude details accordingly!"
+msgstr "&amp;nbsp;Uppdatera latitud och longitud i enlighet med detta!"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "City:"
+msgstr "Stad:"
+
+#. module: fieldservice_geoengine
+#: model:ir.model.fields,field_description:fieldservice_geoengine.field_fsm_location__shape
+#: model:ir.model.fields,field_description:fieldservice_geoengine.field_fsm_order__shape
+msgid "Coordinate"
+msgstr "Koordinat"
+
+#. module: fieldservice_geoengine
+#. odoo-javascript
+#: code:addons/fieldservice_geoengine/static/src/js/views/geoengine/geoengine_renderer/geoengine_renderer.esm.js:0
+msgid "Could not generate custom range for selected Attribute Field: \"%s\""
+msgstr "Kunde inte skapa anpassat intervall för valt attributfält: \"%s\""
+
+#. module: fieldservice_geoengine
+#. odoo-javascript
+#: code:addons/fieldservice_geoengine/static/src/js/views/geoengine/geoengine_renderer/geoengine_renderer.esm.js:0
+msgid "Could not generate interval range for selected Attribute Field: \"%s\""
+msgstr "Kunde inte skapa intervall för valt attributfält: \"%s\""
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "Country:"
+msgstr "Land:"
+
+#. module: fieldservice_geoengine
+#: model:geoengine.vector.layer,name:fieldservice_geoengine.loc_geoengine_vector_layer_fsm0
+msgid "FSM Location Point"
+msgstr "Serviceplatts punkt"
+
+#. module: fieldservice_geoengine
+#: model:geoengine.vector.layer,name:fieldservice_geoengine.loc_geoengine_vector_layer_fsmordertatecoloredcustom0
+msgid "FSM Location State colored custom"
+msgstr "Serviceplatts status färgad anpassad"
+
+#. module: fieldservice_geoengine
+#: model:geoengine.vector.layer,name:fieldservice_geoengine.geoengine_vector_layer_fsm0
+msgid "FSM Order Point"
+msgstr "Arbetsorder punkt"
+
+#. module: fieldservice_geoengine
+#: model:geoengine.vector.layer,name:fieldservice_geoengine.geoengine_vector_layer_fsmordertatecoloredcustom0
+msgid "FSM Order State colored custom"
+msgstr "Arbetsorder status färgad anpassad"
+
+#. module: fieldservice_geoengine
+#: model:ir.model,name:fieldservice_geoengine.model_fsm_location
+msgid "Field Service Location"
+msgstr "Hiss"
+
+#. module: fieldservice_geoengine
+#: model:ir.model,name:fieldservice_geoengine.model_fsm_order
+msgid "Field Service Order"
+msgstr "ArbertsOrder"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.fsm_order_form
+msgid "GeoCode Location"
+msgstr "Geokoda hiss"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.fsm_order_form
+msgid "Map"
+msgstr "Karta"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "Mobile:"
+msgstr "Mobil:"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "Name:"
+msgstr "Namn:"
+
+#. module: fieldservice_geoengine
+#: model:geoengine.raster.layer,name:fieldservice_geoengine.geoengine_raster_layer_retailmachineosm
+#: model:geoengine.raster.layer,name:fieldservice_geoengine.loc_geoengine_raster_layer_osm
+msgid "Open Street Map"
+msgstr "OpenStreetMap"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "Phone:"
+msgstr "Telefon:"
+
+#. module: fieldservice_geoengine
+#: model:ir.model.fields,field_description:fieldservice_geoengine.field_fsm_location__custom_color
+msgid "Stage Color"
+msgstr "Etapp Färg"
+
+#. module: fieldservice_geoengine
+#: model:ir.model.fields,field_description:fieldservice_geoengine.field_fsm_location__stage_name
+msgid "Stage Name"
+msgstr "Namn på etapp"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "State:"
+msgstr "Status:"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "Street 2:"
+msgstr "Gata 2:"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "Street:"
+msgstr "Gata:"
+
+#. module: fieldservice_geoengine
+#: model:ir.model.fields,help:fieldservice_geoengine.field_fsm_location__custom_color
+msgid "Use Hex Code only Ex:-#FFFFFF"
+msgstr "Använd endast Hex-kod Ex:-#FFFFFF"
+
+#. module: fieldservice_geoengine
+#: model:ir.model,name:fieldservice_geoengine.model_geoengine_vector_layer
+msgid "Vector Layer"
+msgstr "Vektor lager"
+
+#. module: fieldservice_geoengine
+#. odoo-python
+#: code:addons/fieldservice_geoengine/models/vector_layer.py:0
+msgid "You need to select a numeric field"
+msgstr "Du måste välja ett numeriskt fält"
+
+#. module: fieldservice_geoengine
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_location_map
+#: model_terms:ir.ui.view,arch_db:fieldservice_geoengine.ir_ui_view_fsm_order_map
+msgid "ZIP:"
+msgstr "Postnummer:"
